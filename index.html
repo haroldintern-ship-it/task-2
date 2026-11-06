@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5"><meta name="description" content="Explore internships in development, design, analytics and security.">
+  <title>Find your next opportunity — EdVyro</title><link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#opportunities">Skip to opportunities</a>
+  <header class="site-header"><div class="nav-wrap">
+    <a class="brand" href="#home" aria-label="EdVyro home"><span class="brand-mark">e</span><span>edvyro<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation"><a href="#opportunities">Explore roles</a><a href="#how-it-works">How it works</a><a class="nav-cta" href="#opportunities">Find an internship <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-inner">
+      <div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> YOUR NEXT CHAPTER STARTS HERE</p><h1 id="hero-title">Small steps.<br><span>Big beginnings.</span></h1><p class="hero-intro">Find an internship that moves you forward. Explore hands-on opportunities across the skills and fields shaping tomorrow.</p>
+        <form id="search-form" class="search-form" role="search"><label class="sr-only" for="search">Search internships</label><span class="search-icon" aria-hidden="true">⌕</span><input id="search" name="search" type="search" placeholder="Try “JavaScript” or “design”"><button type="submit">Search <span aria-hidden="true">→</span></button></form>
+        <p class="search-hint">Explore opportunities matched to what you want to learn.</p>
+      </div><aside class="hero-note" aria-label="Internship board"><div class="note-top"><span>THE OPPORTUNITY BOARD</span><span aria-hidden="true">↗</span></div><div class="note-graphic"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="spark spark-a">✳</div><div class="spark spark-b">✦</div><div class="note-center"><span>YOUR</span><strong>next<br>move</strong></div><div class="note-sticker">go<br>for it!</div></div><p>Make room for what’s next.</p></aside>
+    </div><div class="hero-footer"><span>Curiosity looks good on you.</span><span>Scroll to explore <span aria-hidden="true">↓</span></span></div></section>
+    <section id="opportunities" class="opportunities section-wrap" aria-labelledby="opportunities-title">
+      <div class="section-heading"><div><p class="eyebrow">A GOOD PLACE TO START</p><h2 id="opportunities-title">Find your <span>fit.</span></h2></div><p>Real projects. Room to grow.<br>One opportunity at a time.</p></div>
+      <div class="filters" aria-label="Filter internships"><div class="filter-select"><label for="domain-filter">I’m interested in</label><select id="domain-filter"><option value="">All fields</option></select></div><div class="filter-select"><label for="mode-filter">Work style</label><select id="mode-filter"><option value="">Any work style</option></select></div><button id="clear-filters" class="clear-button" type="button">Clear filters <span aria-hidden="true">↺</span></button></div>
+      <div class="results-meta"><p id="results-count" aria-live="polite">Loading opportunities…</p><span class="meta-rule"></span><span class="meta-label">TAKE A LOOK AROUND</span></div>
+      <div id="status-panel" class="status-panel" role="status" hidden></div>
+      <div id="internship-list" class="internship-grid" aria-live="polite" aria-busy="true"></div>
+    </section>
+    <section id="how-it-works" class="closing"><div class="closing-inner"><p class="eyebrow">YOUR JOURNEY, YOUR PACE</p><h2>Start somewhere.<br><span>Go anywhere.</span></h2><p>Every great career has a first page. Find an opportunity, show up curious, and see where it takes you.</p><a href="#opportunities">Explore opportunities <span aria-hidden="true">↗</span></a></div><div class="closing-doodle" aria-hidden="true">✳</div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">e</span><span>edvyro<span class="brand-dot">.</span></span></a><p>Make your next move count.</p><span>© <span id="year"></span> EdVyro</span></footer>
+  <dialog id="details-dialog" aria-labelledby="dialog-title"><div class="dialog-shell"><button class="dialog-close" type="button" aria-label="Close details">×</button><p class="eyebrow">INTERNSHIP DETAILS</p><div id="dialog-content"></div><form id="application-form" novalidate><h3>Ready to take the next step?</h3><p class="form-intro">Share a few details and we’ll record your application.</p><input type="hidden" name="internshipId"><div class="form-field"><label for="applicant-name">Your name</label><input id="applicant-name" name="name" autocomplete="name" maxlength="100" required></div><div class="form-field"><label for="applicant-email">Email address</label><input id="applicant-email" name="email" type="email" autocomplete="email" maxlength="254" required></div><div class="form-field"><label for="applicant-portfolio">Portfolio or supporting link <span>(optional)</span></label><input id="applicant-portfolio" name="portfolio" type="url" inputmode="url" placeholder="https://"></div><button class="submit-button" type="submit">Submit application <span aria-hidden="true">→</span></button><p id="form-message" class="form-message" aria-live="polite"></p></form></div></dialog>
+</body></html>

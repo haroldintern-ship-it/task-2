@@ -1,0 +1,8 @@
+{
+  "name": "edvyro-internship-board",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive internship board built with vanilla JavaScript and Node.js",
+  "scripts": { "start": "node server.js", "test": "node --test" },
+  "engines": { "node": ">=18" }
+}
